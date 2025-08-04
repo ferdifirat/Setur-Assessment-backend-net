@@ -28,8 +28,15 @@ public class HandlerTests
         );
 
         var contactId = Guid.NewGuid();
+        var contact = new Contact
+        {
+            Id = contactId,
+            FirstName = "Ali",
+            LastName = "Veli",
+            Company = "ABC"
+        };
         _contactRepositoryMock.Setup(x => x.AddAsync(It.IsAny<Contact>()))
-            .ReturnsAsync(contactId);
+            .ReturnsAsync(contact);
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);
@@ -153,8 +160,15 @@ public class HandlerTests
             .ReturnsAsync(contact);
 
         var infoId = Guid.NewGuid();
+        var contactInfo = new ContactInformation 
+        { 
+            Id = infoId, 
+            Type = ContactInfoType.Phone, 
+            Value = "+90 555 123 4567",
+            ContactId = contactId
+        };
         _contactInfoRepositoryMock.Setup(x => x.AddAsync(It.IsAny<ContactInformation>()))
-            .ReturnsAsync(infoId);
+            .ReturnsAsync(contactInfo);
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);
@@ -172,15 +186,18 @@ public class HandlerTests
         var infoId = Guid.NewGuid();
         var command = new DeleteContactInformationCommand(infoId);
 
+        var contactInfo = new ContactInformation { Id = infoId, Type = ContactInfoType.Phone, Value = "123456789" };
+        
+        _contactInfoRepositoryMock.Setup(x => x.GetByIdAsync(infoId))
+            .ReturnsAsync(contactInfo);
         _contactInfoRepositoryMock.Setup(x => x.DeleteAsync(infoId))
-            .ReturnsAsync(true);
+            .Returns(Task.CompletedTask);
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);
 
         // Assert
         Assert.True(result.IsSuccess);
-        Assert.True(result.Value);
     }
 
     [Fact]
@@ -191,8 +208,8 @@ public class HandlerTests
         var infoId = Guid.NewGuid();
         var command = new DeleteContactInformationCommand(infoId);
 
-        _contactInfoRepositoryMock.Setup(x => x.DeleteAsync(infoId))
-            .ReturnsAsync(false);
+        _contactInfoRepositoryMock.Setup(x => x.GetByIdAsync(infoId))
+            .ReturnsAsync((ContactInformation?)null);
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);

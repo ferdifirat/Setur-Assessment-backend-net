@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07C39FE3-1111-4152-B366-58F907E83AE6}|ContactService\\ContactService.Tests\\ContactService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.tests\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07C39FE3-1111-4152-B366-58F907E83AE6}|ContactService\\ContactService.Tests\\ContactService.Tests.csproj|solutionrelative:contactservice\\contactservice.tests\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.tests\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|solutionrelative:reportservice\\reportservice.tests\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.tests\\handlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|solutionrelative:reportservice\\reportservice.tests\\handlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22172596-7BB0-4C8C-AB96-FD39E93F4C1C}|ReportService\\ReportService.Api\\ReportService.Api.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22172596-7BB0-4C8C-AB96-FD39E93F4C1C}|ReportService\\ReportService.Api\\ReportService.Api.csproj|solutionrelative:reportservice\\reportservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22172596-7BB0-4C8C-AB96-FD39E93F4C1C}|ReportService\\ReportService.Api\\ReportService.Api.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.api\\reportservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22172596-7BB0-4C8C-AB96-FD39E93F4C1C}|ReportService\\ReportService.Api\\ReportService.Api.csproj|solutionrelative:reportservice\\reportservice.api\\reportservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.tests\\reportservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|solutionrelative:reportservice\\reportservice.tests\\reportservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07C39FE3-1111-4152-B366-58F907E83AE6}|ContactService\\ContactService.Tests\\ContactService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.tests\\handlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,34 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{07C39FE3-1111-4152-B366-58F907E83AE6}|ContactService\\ContactService.Tests\\ContactService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.tests\\contactcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07C39FE3-1111-4152-B366-58F907E83AE6}|ContactService\\ContactService.Tests\\ContactService.Tests.csproj|solutionrelative:contactservice\\contactservice.tests\\contactcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.tests\\reportcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|solutionrelative:reportservice\\reportservice.tests\\reportcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|solutionrelative:contactservice\\contactservice.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|solutionrelative:reportservice\\reportservice.infrastructure\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|solutionrelative:contactservice\\contactservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.tests\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|solutionrelative:reportservice\\reportservice.tests\\integrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.tests\\testconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{179A4B17-B184-44BA-871D-186A15D38542}|ReportService\\ReportService.Tests\\ReportService.Tests.csproj|solutionrelative:reportservice\\reportservice.tests\\testconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 26,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,129 +51,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HandlerTests.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\HandlerTests.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Tests\\HandlerTests.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\HandlerTests.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Tests\\HandlerTests.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAAAK4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:49:39.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\ContactControllerTests.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Tests\\ContactControllerTests.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\ContactControllerTests.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Tests\\ContactControllerTests.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAAALIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:49:28.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Program.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Program.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Api\\Program.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAACwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:47:18.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:47:01.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "ReportService\\ReportService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "ReportService\\ReportService.Infrastructure\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:46:32.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "IntegrationTests.cs",
               "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\IntegrationTests.cs",
               "RelativeDocumentMoniker": "ReportService\\ReportService.Tests\\IntegrationTests.cs",
               "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\IntegrationTests.cs",
               "RelativeToolTip": "ReportService\\ReportService.Tests\\IntegrationTests.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAwwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:46:13.507Z",
+              "WhenOpened": "2025-08-04T23:03:51.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReportControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\ReportControllerTests.cs",
-              "RelativeDocumentMoniker": "ReportService\\ReportService.Tests\\ReportControllerTests.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\ReportControllerTests.cs",
-              "RelativeToolTip": "ReportService\\ReportService.Tests\\ReportControllerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HandlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\HandlerTests.cs",
+              "RelativeDocumentMoniker": "ReportService\\ReportService.Tests\\HandlerTests.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\HandlerTests.cs",
+              "RelativeToolTip": "ReportService\\ReportService.Tests\\HandlerTests.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAswKYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:46:13.012Z",
+              "WhenOpened": "2025-08-04T23:02:40.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TestConstants.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\TestConstants.cs",
-              "RelativeDocumentMoniker": "ReportService\\ReportService.Tests\\TestConstants.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\TestConstants.cs",
-              "RelativeToolTip": "ReportService\\ReportService.Tests\\TestConstants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:46:12.272Z",
+              "DocumentIndex": 4,
+              "Title": "ReportService.Api",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Api\\ReportService.Api.csproj",
+              "RelativeDocumentMoniker": "ReportService\\ReportService.Api\\ReportService.Api.csproj",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Api\\ReportService.Api.csproj",
+              "RelativeToolTip": "ReportService\\ReportService.Api\\ReportService.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-04T22:58:51.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ServiceCollectionExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\ServiceCollectionExtensions.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\ServiceCollectionExtensions.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\ServiceCollectionExtensions.cs",
-              "RelativeToolTip": "Shared\\Shared.Infrastructure\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T22:40:34.439Z",
+              "Title": "ReportService.Tests",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\ReportService.Tests.csproj",
+              "RelativeDocumentMoniker": "ReportService\\ReportService.Tests\\ReportService.Tests.csproj",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Tests\\ReportService.Tests.csproj",
+              "RelativeToolTip": "ReportService\\ReportService.Tests\\ReportService.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-04T22:58:48.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\IntegrationTests.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Tests\\IntegrationTests.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\IntegrationTests.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Tests\\IntegrationTests.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAASwCwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T22:57:42.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HandlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\HandlerTests.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Tests\\HandlerTests.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\HandlerTests.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Tests\\HandlerTests.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAASwC0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T22:57:33.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContactControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\ContactControllerTests.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Tests\\ContactControllerTests.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Tests\\ContactControllerTests.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Tests\\ContactControllerTests.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAASwLMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T22:57:26.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Api\\Program.cs",
               "RelativeDocumentMoniker": "ReportService\\ReportService.Api\\Program.cs",
               "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Api\\Program.cs",
               "RelativeToolTip": "ReportService\\ReportService.Api\\Program.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGEAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAALcAAAAAAAAAAAAEwMsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T22:39:48.798Z",
               "EditorCaption": ""

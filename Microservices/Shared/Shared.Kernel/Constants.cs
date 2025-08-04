@@ -85,4 +85,20 @@ public static class Constants
         public const int DefaultExceptionsAllowedBeforeBreaking = 3;
         public const int DefaultDurationOfBreakSeconds = 30;
     }
+
+    // Error Messages
+    public static class ErrorConstants
+    {
+        public static class Messages
+        {
+            public const string SerilogConfigurationFailed = "Serilog configuration failed. Falling back to basic console logging.";
+            public const string DatabaseConnectionFailed = "Database connection failed.";
+            public const string RabbitMQConnectionFailed = "RabbitMQ connection failed.";
+            public const string ReportCreationFailed = "Report creation failed.";
+            public const string ReportUpdateFailed = "Report update failed.";
+            public const string InvalidRequest = "Invalid request.";
+            public const string NotFound = "Resource not found.";
+            public const string InternalServerError = "An internal server error occurred.";
+        }
+    }
 }

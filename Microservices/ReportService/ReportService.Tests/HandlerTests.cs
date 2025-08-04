@@ -29,8 +29,14 @@ public class HandlerTests
         );
 
         var reportId = Guid.NewGuid();
+        var report = new Report
+        {
+            Id = reportId,
+            Status = ReportStatus.Preparing,
+            RequestedAt = DateTime.UtcNow
+        };
         _reportRepositoryMock.Setup(x => x.AddAsync(It.IsAny<Report>()))
-            .ReturnsAsync(reportId);
+            .ReturnsAsync(report);
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);
@@ -151,14 +157,13 @@ public class HandlerTests
         );
 
         _reportRepositoryMock.Setup(x => x.UpdateAsync(It.IsAny<Report>()))
-            .ReturnsAsync(true);
+            .ReturnsAsync(It.IsAny<Report>());
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);
 
         // Assert
         Assert.True(result.IsSuccess);
-        Assert.True(result.Value);
     }
 
     [Fact]
@@ -175,7 +180,7 @@ public class HandlerTests
         );
 
         _reportRepositoryMock.Setup(x => x.UpdateAsync(It.IsAny<Report>()))
-            .ReturnsAsync(false);
+            .ReturnsAsync(It.IsAny<Report>());
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);

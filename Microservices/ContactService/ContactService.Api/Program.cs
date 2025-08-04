@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Shared.Infrastructure;
 using Shared.Infrastructure.Messaging;
+using Shared.Kernel;
 using Shared.Kernel.Behaviors;
 
 var builder = WebApplication.CreateBuilder(args);

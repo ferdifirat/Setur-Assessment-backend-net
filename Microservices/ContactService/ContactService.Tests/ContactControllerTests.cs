@@ -39,7 +39,7 @@ public class ContactControllerTests
         var result = Result<Guid>.Success(contactId);
 
         _mediatorMock.Setup(x => x.Send(It.IsAny<CreateContactCommand>(), default))
-            .ReturnsAsync(result);
+            .Returns(Task.FromResult(result));
 
         // Act
         var actionResult = await _controller.Create(dto);
@@ -63,7 +63,7 @@ public class ContactControllerTests
         var result = Result<Guid>.Fail(TestConstants.ErrorMessages.FirstNameRequired);
 
         _mediatorMock.Setup(x => x.Send(It.IsAny<CreateContactCommand>(), default))
-            .ReturnsAsync(result);
+            .Returns(Task.FromResult(result));
 
         // Act
         var actionResult = await _controller.Create(dto);
@@ -90,7 +90,7 @@ public class ContactControllerTests
         var result = Result<ContactDto>.Success(contactDto);
 
         _mediatorMock.Setup(x => x.Send(It.IsAny<GetContactByIdQuery>(), default))
-            .ReturnsAsync(result);
+            .Returns(Task.FromResult(result));
 
         // Act
         var actionResult = await _controller.GetById(contactId);
@@ -109,7 +109,7 @@ public class ContactControllerTests
         var result = Result<ContactDto>.Fail(TestConstants.ErrorMessages.ContactNotFound);
 
         _mediatorMock.Setup(x => x.Send(It.IsAny<GetContactByIdQuery>(), default))
-            .ReturnsAsync(result);
+            .Returns(Task.FromResult(result));
 
         // Act
         var actionResult = await _controller.GetById(contactId);
@@ -133,7 +133,7 @@ public class ContactControllerTests
         var result = Result<List<ContactDto>>.Success(contacts);
 
         _mediatorMock.Setup(x => x.Send(It.IsAny<GetAllContactsQuery>(), default))
-            .ReturnsAsync(result);
+            .Returns(Task.FromResult(result));
 
         // Act
         var actionResult = await _controller.GetAll();
@@ -159,7 +159,7 @@ public class ContactControllerTests
         var result = Result<Guid>.Success(infoId);
 
         _mediatorMock.Setup(x => x.Send(It.IsAny<CreateContactInformationCommand>(), default))
-            .ReturnsAsync(result);
+            .Returns(Task.FromResult(result));
 
         // Act
         var actionResult = await _controller.AddContactInformation(dto);
@@ -174,10 +174,10 @@ public class ContactControllerTests
     {
         // Arrange
         var infoId = Guid.NewGuid();
-        var result = Result<bool>.Success(true);
+        var result = Result.Success();
 
         _mediatorMock.Setup(x => x.Send(It.IsAny<DeleteContactInformationCommand>(), default))
-            .ReturnsAsync(result);
+            .Returns(Task.FromResult(result));
 
         // Act
         var actionResult = await _controller.DeleteContactInformation(infoId);

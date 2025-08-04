@@ -1,33 +1,44 @@
-using Microsoft.EntityFrameworkCore;
-using ReportService.Domain.Repositories;
-using ReportService.Application.Validators;
-using Shared.Infrastructure.Messaging;
-using Shared.Kernel.Events;
-using Shared.Kernel.Behaviors;
-using MediatR;
-using Serilog;
 using AspNetCoreRateLimit;
-using Polly;
-using Polly.CircuitBreaker;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Mvc.Versioning;
-using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.EntityFrameworkCore;
+using Polly;
+using Microsoft.Extensions.Http;
+using HealthChecks.NpgSql;
 using ReportService.Application;
-using ReportService.Infrastructure;
-using Polly.Extensions.Http;
+using ReportService.Application.Validators;
 using ReportService.Domain;
+using ReportService.Domain.Repositories;
+using ReportService.Infrastructure;
 using ReportService.Infrastructure.Repositories;
+using Serilog;
+using Shared.Infrastructure.Messaging;
+using Shared.Kernel;
+using Shared.Kernel.Behaviors;
+using Polly.Extensions.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure Serilog
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .Enrich.FromLogContext()
-    .WriteTo.Console()
-    .WriteTo.File("logs/reportservice-.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+try
+{
+    Log.Logger = new LoggerConfiguration()
+        .ReadFrom.Configuration(builder.Configuration)
+        .CreateLogger();
 
-builder.Host.UseSerilog();
+    builder.Host.UseSerilog();
+}
+catch (Exception ex)
+{
+    // Fallback to basic console logging if Serilog configuration fails
+    Log.Logger = new LoggerConfiguration()
+        .WriteTo.Console()
+        .CreateLogger();
+
+    Log.Warning(ex, Constants.ErrorConstants.Messages.SerilogConfigurationFailed);
+}
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -79,7 +90,8 @@ builder.Services.AddDbContext<ReportDbContext>(options =>
 builder.Services.AddScoped<IReportRepository, ReportRepository>();
 
 // MediatR
-builder.Services.AddMediatR(cfg => {
+builder.Services.AddMediatR(cfg =>
+{
     cfg.RegisterServicesFromAssembly(typeof(CreateReportCommand).Assembly);
 });
 
