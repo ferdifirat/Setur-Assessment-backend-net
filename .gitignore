@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Setur-Assessment-backend-net/v17
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/Microservices/.vs/Microservices/v17/.suo
+/Microservices/.vs/Microservices/v17/DocumentLayout.json
+/Microservices/ContactService/ContactService.Api/obj/Debug/net8.0
+/Microservices/ContactService/ContactService.Api/obj
+/Microservices/ContactService/ContactService.Domain/obj
+/Microservices/ContactService/ContactService.Infrastructure/obj
+/Microservices/ContactService/ContactService.Tests/obj
+/Microservices/ReportService/Report.Infrastructure/obj
+/Microservices/ReportService/ReportService.Api/obj
+/Microservices/ReportService/ReportService.Domain/obj/Debug/net8.0
+/Microservices/Shared/Shared.Infrastructure/obj
