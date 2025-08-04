@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.Docker.Sdk">
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>8d0c8afe-66f4-43bd-ae12-7d7f0e9e2e39</ProjectGuid>
+	</PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<DockerTargetOS>Linux</DockerTargetOS>
+		<DockerPublishLocally>False</DockerPublishLocally>
+		<ProjectVersion>2.1</ProjectVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="docker-compose.yml" />
+	</ItemGroup>
+</Project>

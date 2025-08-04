@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.domain\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|solutionrelative:contactservice\\contactservice.domain\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22172596-7BB0-4C8C-AB96-FD39E93F4C1C}|ReportService\\ReportService.Api\\ReportService.Api.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.api\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22172596-7BB0-4C8C-AB96-FD39E93F4C1C}|ReportService\\ReportService.Api\\ReportService.Api.csproj|solutionrelative:reportservice\\reportservice.api\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.api\\properties\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|solutionrelative:contactservice\\contactservice.api\\properties\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\queries\\getallcontactsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\queries\\getallcontactsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.kernel\\queries\\icachablequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|solutionrelative:shared\\shared.kernel\\queries\\icachablequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\queries\\getcontactbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\queries\\getcontactbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 26,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Api\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "ReportService\\ReportService.Api\\Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Api\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "ReportService\\ReportService.Api\\Controllers\\ReportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:35:39.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICachableQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Queries\\ICachableQuery.cs",
+              "RelativeDocumentMoniker": "Shared\\Shared.Kernel\\Queries\\ICachableQuery.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Queries\\ICachableQuery.cs",
+              "RelativeToolTip": "Shared\\Shared.Kernel\\Queries\\ICachableQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:34:18.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllContactsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Queries\\GetAllContactsQuery.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Queries\\GetAllContactsQuery.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Queries\\GetAllContactsQuery.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Application\\Queries\\GetAllContactsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:33:42.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetContactByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Queries\\GetContactByIdQuery.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Queries\\GetContactByIdQuery.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Queries\\GetContactByIdQuery.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Application\\Queries\\GetContactByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T18:33:35.307Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Entities\\Contact.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Domain\\Entities\\Contact.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Entities\\Contact.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Domain\\Entities\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T18:02:25.931Z",
+              "WhenOpened": "2025-08-04T18:30:58.36Z",
               "EditorCaption": ""
             }
           ]
