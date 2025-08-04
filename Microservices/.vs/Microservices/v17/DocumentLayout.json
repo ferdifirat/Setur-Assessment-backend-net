@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.infrastructure\\data\\reportdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|solutionrelative:reportservice\\reportservice.infrastructure\\data\\reportdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.infrastructure\\data\\contactdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|solutionrelative:contactservice\\contactservice.infrastructure\\data\\contactdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.infrastructure\\repositories\\contactinformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|solutionrelative:contactservice\\contactservice.infrastructure\\repositories\\contactinformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.infrastructure\\repositories\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45E394B5-9A10-4EA5-9C5D-C12A117206BD}|ContactService\\ContactService.Infrastructure\\ContactService.Infrastructure.csproj|solutionrelative:contactservice\\contactservice.infrastructure\\repositories\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.domain\\repositories\\icontactinformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|solutionrelative:contactservice\\contactservice.domain\\repositories\\icontactinformationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.domain\\repositories\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|solutionrelative:contactservice\\contactservice.domain\\repositories\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.infrastructure\\repositories\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|solutionrelative:reportservice\\reportservice.infrastructure\\repositories\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7FB2710-17CE-4A9B-A80B-9311B277289D}|ReportService\\ReportService.Domain\\ReportService.Domain.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.domain\\repositories\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7FB2710-17CE-4A9B-A80B-9311B277289D}|ReportService\\ReportService.Domain\\ReportService.Domain.csproj|solutionrelative:reportservice\\reportservice.domain\\repositories\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.domain\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC38DE7C-6F6E-4964-AB2C-54CEE8EE7232}|ContactService\\ContactService.Domain\\ContactService.Domain.csproj|solutionrelative:contactservice\\contactservice.domain\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,105 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReportDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\Data\\ReportDbContext.cs",
-              "RelativeDocumentMoniker": "ReportService\\ReportService.Infrastructure\\Data\\ReportDbContext.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\Data\\ReportDbContext.cs",
-              "RelativeToolTip": "ReportService\\ReportService.Infrastructure\\Data\\ReportDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Entities\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Domain\\Entities\\Contact.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Entities\\Contact.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Domain\\Entities\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:54:00.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\Data\\ContactDbContext.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Infrastructure\\Data\\ContactDbContext.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\Data\\ContactDbContext.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Infrastructure\\Data\\ContactDbContext.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:53:02.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\Repositories\\ContactRepository.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Infrastructure\\Repositories\\ContactRepository.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\Repositories\\ContactRepository.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Infrastructure\\Repositories\\ContactRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:52:35.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactInformationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\Repositories\\ContactInformationRepository.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Infrastructure\\Repositories\\ContactInformationRepository.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Infrastructure\\Repositories\\ContactInformationRepository.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Infrastructure\\Repositories\\ContactInformationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:52:34.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IContactInformationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Repositories\\IContactInformationRepository.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Domain\\Repositories\\IContactInformationRepository.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Repositories\\IContactInformationRepository.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Domain\\Repositories\\IContactInformationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:52:01.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReportRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
-              "RelativeDocumentMoniker": "ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
-              "RelativeToolTip": "ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:50:56.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IReportRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Domain\\Repositories\\IReportRepository.cs",
-              "RelativeDocumentMoniker": "ReportService\\ReportService.Domain\\Repositories\\IReportRepository.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Domain\\Repositories\\IReportRepository.cs",
-              "RelativeToolTip": "ReportService\\ReportService.Domain\\Repositories\\IReportRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:50:33.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IContactRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Repositories\\IContactRepository.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Domain\\Repositories\\IContactRepository.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Domain\\Repositories\\IContactRepository.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Domain\\Repositories\\IContactRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T17:49:45.111Z",
+              "WhenOpened": "2025-08-04T18:02:25.931Z",
               "EditorCaption": ""
             }
           ]
