@@ -16,3 +16,9 @@
 /Microservices/ReportService/ReportService.Api/obj
 /Microservices/ReportService/ReportService.Domain/obj/Debug/net8.0
 /Microservices/Shared/Shared.Infrastructure/obj
+/Microservices/.vs/Microservices/FileContentIndex
+/Microservices/ContactService/ContactService.Application/obj
+/Microservices/ReportService/ReportService.Application/obj
+/Microservices/ReportService/ReportService.Infrastructure/obj
+/Microservices/ReportService/ReportService.Tests/obj
+/Microservices/ReportService/ReportService.Domain/obj
