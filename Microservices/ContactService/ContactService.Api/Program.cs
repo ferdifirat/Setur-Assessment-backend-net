@@ -1,12 +1,15 @@
 using ContactService.Application;
 using ContactService.Infrastructure;
+using ContactService.Infrastructure.Data;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.EntityFrameworkCore;
 using Shared.Infrastructure;
 using Shared.Infrastructure.Messaging;
 using Shared.Kernel;
 using Shared.Kernel.Behaviors;
+using static Shared.Kernel.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -51,6 +54,22 @@ builder.Services.AddHealthChecks();
 // Add Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+try
+{
+    using var scope = builder.Services.BuildServiceProvider().CreateScope();
+    var dbContext = scope.ServiceProvider.GetRequiredService<ContactDbContext>();
+
+    dbContext.Database.Migrate();
+    dbContext.Database.OpenConnection();
+    dbContext.Database.CloseConnection();
+
+    Console.WriteLine("Success");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"{ErrorConstants.Messages.DatabaseConnectionFailed}: {ex.Message}");
+}
 
 var app = builder.Build();
 

@@ -57,8 +57,13 @@ public class ReportControllerTests
 
         // Assert
         var badRequestResult = Assert.IsType<BadRequestObjectResult>(actionResult);
-        var errorResponse = Assert.IsType<Anonymous>(badRequestResult.Value);
-        Assert.Equal(TestConstants.ErrorMessages.ReportNotFound, errorResponse.Error);
+        
+        // Use reflection to check the anonymous type properties
+        var errorProperty = badRequestResult.Value.GetType().GetProperty("Error");
+        Assert.NotNull(errorProperty);
+        
+        var error = (string)errorProperty.GetValue(badRequestResult.Value);
+        Assert.Equal(TestConstants.ErrorMessages.ReportNotFound, error);
     }
 
     [Fact]
@@ -104,8 +109,13 @@ public class ReportControllerTests
 
         // Assert
         var notFoundResult = Assert.IsType<NotFoundObjectResult>(actionResult);
-        var errorResponse = Assert.IsType<Anonymous>(notFoundResult.Value);
-        Assert.Equal("Rapor bulunamadı.", errorResponse.Error);
+        
+        // Use reflection to check the anonymous type properties
+        var errorProperty = notFoundResult.Value.GetType().GetProperty("Error");
+        Assert.NotNull(errorProperty);
+        
+        var error = (string)errorProperty.GetValue(notFoundResult.Value);
+        Assert.Equal("Rapor bulunamadı.", error);
     }
 
     [Fact]
@@ -153,12 +163,14 @@ public class ReportControllerTests
 
         // Assert
         var badRequestResult = Assert.IsType<BadRequestObjectResult>(actionResult);
-        var errorResponse = Assert.IsType<Anonymous>(badRequestResult.Value);
-        Assert.Equal("Geçersiz rapor ID.", errorResponse.Error);
+        
+        // Use reflection to get the Error property value from the anonymous type
+        var errorProperty = badRequestResult.Value.GetType().GetProperty("Error");
+        Assert.NotNull(errorProperty);
+        
+        var errorValue = errorProperty.GetValue(badRequestResult.Value) as string;
+        Assert.Equal("Geçersiz rapor ID.", errorValue);
     }
 
-    private class Anonymous
-    {
-        public string Error { get; set; } = string.Empty;
-    }
+
 }

@@ -19,19 +19,19 @@ public class HandlerTests
     {
         // Arrange
         var handler = new CreateReportHandler(_reportRepositoryMock.Object);
+        var expectedReportId = Guid.NewGuid();
         var command = new CreateReportCommand(
             new CreateReportDto
             {
-                ReportId = Guid.NewGuid(),
+                ReportId = expectedReportId,
                 RequestedAt = DateTime.UtcNow
             },
             "test-user"
         );
 
-        var reportId = Guid.NewGuid();
         var report = new Report
         {
-            Id = reportId,
+            Id = expectedReportId,
             Status = ReportStatus.Preparing,
             RequestedAt = DateTime.UtcNow
         };
@@ -43,7 +43,7 @@ public class HandlerTests
 
         // Assert
         Assert.True(result.IsSuccess);
-        Assert.Equal(reportId, result.Value);
+        Assert.Equal(expectedReportId, result.Value);
         _reportRepositoryMock.Verify(x => x.AddAsync(It.IsAny<Report>()), Times.Once);
     }
 
@@ -156,6 +156,15 @@ public class HandlerTests
             "test-user"
         );
 
+        var existingReport = new Report
+        {
+            Id = reportId,
+            Status = ReportStatus.Preparing,
+            RequestedAt = DateTime.UtcNow
+        };
+
+        _reportRepositoryMock.Setup(x => x.GetByIdAsync(reportId))
+            .ReturnsAsync(existingReport);
         _reportRepositoryMock.Setup(x => x.UpdateAsync(It.IsAny<Report>()))
             .ReturnsAsync(It.IsAny<Report>());
 
@@ -164,6 +173,8 @@ public class HandlerTests
 
         // Assert
         Assert.True(result.IsSuccess);
+        _reportRepositoryMock.Verify(x => x.GetByIdAsync(reportId), Times.Once);
+        _reportRepositoryMock.Verify(x => x.UpdateAsync(It.IsAny<Report>()), Times.Once);
     }
 
     [Fact]

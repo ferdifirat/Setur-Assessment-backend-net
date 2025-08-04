@@ -3,6 +3,7 @@ using ContactService.Application;
 using ContactService.Commands;
 using ContactService.Domain;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Shared.Infrastructure.Messaging;
@@ -22,6 +23,21 @@ public class ContactControllerTests
         _mediatorMock = new Mock<IMediator>();
         _eventPublisherMock = new Mock<IEventPublisher>();
         _controller = new ContactController(_mediatorMock.Object, _eventPublisherMock.Object);
+        
+        // Set up the User context to avoid NullReferenceException
+        var claims = new List<System.Security.Claims.Claim>
+        {
+            new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, "test-user")
+        };
+        var identity = new System.Security.Claims.ClaimsIdentity(claims, "Test");
+        var principal = new System.Security.Claims.ClaimsPrincipal(identity);
+        _controller.ControllerContext = new ControllerContext
+        {
+            HttpContext = new DefaultHttpContext
+            {
+                User = principal
+            }
+        };
     }
 
     [Fact]
@@ -70,8 +86,13 @@ public class ContactControllerTests
 
         // Assert
         var badRequestResult = Assert.IsType<BadRequestObjectResult>(actionResult);
-        var errorResponse = Assert.IsType<Anonymous>(badRequestResult.Value);
-        Assert.Equal(TestConstants.ErrorMessages.FirstNameRequired, errorResponse.Error);
+        
+        // Use reflection to check the anonymous type properties
+        var errorProperty = badRequestResult.Value.GetType().GetProperty("Error");
+        Assert.NotNull(errorProperty);
+        
+        var error = (string)errorProperty.GetValue(badRequestResult.Value);
+        Assert.Equal(TestConstants.ErrorMessages.FirstNameRequired, error);
     }
 
     [Fact]
@@ -116,8 +137,13 @@ public class ContactControllerTests
 
         // Assert
         var notFoundResult = Assert.IsType<NotFoundObjectResult>(actionResult);
-        var errorResponse = Assert.IsType<Anonymous>(notFoundResult.Value);
-        Assert.Equal(TestConstants.ErrorMessages.ContactNotFound, errorResponse.Error);
+        
+        // Use reflection to check the anonymous type properties
+        var errorProperty = notFoundResult.Value.GetType().GetProperty("Error");
+        Assert.NotNull(errorProperty);
+        
+        var error = (string)errorProperty.GetValue(notFoundResult.Value);
+        Assert.Equal(TestConstants.ErrorMessages.ContactNotFound, error);
     }
 
     [Fact]
@@ -198,14 +224,14 @@ public class ContactControllerTests
 
         // Assert
         var acceptedResult = Assert.IsType<AcceptedResult>(actionResult);
-        var response = Assert.IsType<Anonymous>(acceptedResult.Value);
-        Assert.NotNull(response.ReportId);
-        Assert.NotEqual(Guid.Empty, response.ReportId);
+        
+        // Use reflection to check the anonymous type properties
+        var reportIdProperty = acceptedResult.Value.GetType().GetProperty("ReportId");
+        Assert.NotNull(reportIdProperty);
+        
+        var reportId = (Guid)reportIdProperty.GetValue(acceptedResult.Value);
+        Assert.NotEqual(Guid.Empty, reportId);
     }
 
-    private class Anonymous
-    {
-        public string Error { get; set; } = string.Empty;
-        public Guid ReportId { get; set; }
-    }
+
 }

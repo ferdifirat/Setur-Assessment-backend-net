@@ -36,7 +36,12 @@ public class HandlerTests
             Company = "ABC"
         };
         _contactRepositoryMock.Setup(x => x.AddAsync(It.IsAny<Contact>()))
-            .ReturnsAsync(contact);
+            .ReturnsAsync((Contact c) => 
+            {
+                // Return the contact that was passed in, but with the expected ID
+                c.Id = contactId;
+                return c;
+            });
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);
@@ -84,7 +89,7 @@ public class HandlerTests
             Company = "ABC"
         };
 
-        _contactRepositoryMock.Setup(x => x.GetByIdAsync(contactId))
+        _contactRepositoryMock.Setup(x => x.GetByIdWithInformationsAsync(contactId))
             .ReturnsAsync(contact);
 
         // Act
@@ -104,7 +109,7 @@ public class HandlerTests
         var contactId = Guid.NewGuid();
         var query = new GetContactByIdQuery(contactId);
 
-        _contactRepositoryMock.Setup(x => x.GetByIdAsync(contactId))
+        _contactRepositoryMock.Setup(x => x.GetByIdWithInformationsAsync(contactId))
             .ReturnsAsync((Contact?)null);
 
         // Act
@@ -128,7 +133,7 @@ public class HandlerTests
             new() { Id = Guid.NewGuid(), FirstName = "Ayşe", LastName = "Fatma" }
         };
 
-        _contactRepositoryMock.Setup(x => x.GetAllAsync())
+        _contactRepositoryMock.Setup(x => x.GetActiveWithInformationsAsync())
             .ReturnsAsync(contacts);
 
         // Act
@@ -159,23 +164,24 @@ public class HandlerTests
         _contactRepositoryMock.Setup(x => x.GetByIdAsync(contactId))
             .ReturnsAsync(contact);
 
-        var infoId = Guid.NewGuid();
-        var contactInfo = new ContactInformation 
-        { 
-            Id = infoId, 
-            Type = ContactInfoType.Phone, 
-            Value = "+90 555 123 4567",
-            ContactId = contactId
-        };
+        ContactInformation? capturedContactInfo = null;
         _contactInfoRepositoryMock.Setup(x => x.AddAsync(It.IsAny<ContactInformation>()))
-            .ReturnsAsync(contactInfo);
+            .ReturnsAsync((ContactInformation contactInfo) => 
+            {
+                capturedContactInfo = contactInfo;
+                return contactInfo;
+            });
 
         // Act
         var result = await handler.Handle(command, CancellationToken.None);
 
         // Assert
         Assert.True(result.IsSuccess);
-        Assert.Equal(infoId, result.Value);
+        Assert.NotNull(capturedContactInfo);
+        Assert.Equal(capturedContactInfo.Id, result.Value);
+        Assert.Equal(command.Dto.ContactId, capturedContactInfo.ContactId);
+        Assert.Equal(command.Dto.Type, capturedContactInfo.Type);
+        Assert.Equal(command.Dto.Value, capturedContactInfo.Value);
     }
 
     [Fact]

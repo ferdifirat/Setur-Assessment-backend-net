@@ -53,7 +53,8 @@ builder.Services.AddApiVersioning(options =>
     options.ReportApiVersions = true;
     options.ApiVersionReader = ApiVersionReader.Combine(
         new UrlSegmentApiVersionReader(),
-        new HeaderApiVersionReader("X-API-Version")
+        new HeaderApiVersionReader("X-API-Version"),
+        new MediaTypeApiVersionReader("X-API-Version")
     );
 });
 
@@ -108,20 +109,24 @@ builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RetryBehavior
 builder.Services.AddMemoryCache();
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
 
-try
+// Skip database connection test in test environment
+if (!builder.Environment.IsEnvironment("Test"))
 {
-    using (var scope = builder.Services.BuildServiceProvider().CreateScope())
+    try
     {
-        var dbContext = scope.ServiceProvider.GetRequiredService<ReportDbContext>();
-        dbContext.Database.Migrate();
-        dbContext.Database.OpenConnection(); // Try to open the connection
-        dbContext.Database.CloseConnection(); // Close the connection
-        Log.Information("Database connection successful.");
+        using (var scope = builder.Services.BuildServiceProvider().CreateScope())
+        {
+            var dbContext = scope.ServiceProvider.GetRequiredService<ReportDbContext>();
+            dbContext.Database.Migrate();
+            dbContext.Database.OpenConnection(); // Try to open the connection
+            dbContext.Database.CloseConnection(); // Close the connection
+            Log.Information("Database connection successful.");
+        }
     }
-}
-catch (Exception ex)
-{
-    Log.Error(ex, "Database connection failed: {Message}", ex.Message);
+    catch (Exception ex)
+    {
+        Log.Error(ex, "Database connection failed: {Message}", ex.Message);
+    }
 }
 
 // RabbitMQ Consumer
@@ -208,3 +213,6 @@ static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
             durationOfBreak: TimeSpan.FromSeconds(30)
         );
 }
+
+// Make Program class accessible to test projects
+public partial class Program { }

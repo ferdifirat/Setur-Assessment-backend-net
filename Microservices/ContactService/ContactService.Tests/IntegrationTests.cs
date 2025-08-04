@@ -24,6 +24,7 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
         _eventPublisherMock = new Mock<IEventPublisher>();
         _factory = factory.WithWebHostBuilder(builder =>
         {
+            builder.UseEnvironment("Test");
             builder.ConfigureServices(services =>
             {
                 // Replace the real EventPublisher with mock
@@ -43,15 +44,50 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
                 services.AddDbContext<ContactDbContext>(options =>
                 {
                     options.UseInMemoryDatabase("TestDb");
+                    options.EnableSensitiveDataLogging();
+                    options.EnableDetailedErrors();
                 });
+
+                // Remove existing health checks and add a simple one for testing
+                var healthCheckDescriptor = services.SingleOrDefault(d => d.ServiceType == typeof(HealthCheckService));
+                if (healthCheckDescriptor != null)
+                {
+                    services.Remove(healthCheckDescriptor);
+                }
+                
+                // Remove all IHealthCheck registrations
+                var healthChecks = services.Where(d => d.ServiceType == typeof(IHealthCheck)).ToList();
+                foreach (var healthCheck in healthChecks)
+                {
+                    services.Remove(healthCheck);
+                }
+
+                // Remove all IHealthCheckBuilder registrations
+                var healthCheckBuilders = services.Where(d => d.ServiceType == typeof(IHealthChecksBuilder)).ToList();
+                foreach (var healthCheckBuilder in healthCheckBuilders)
+                {
+                    services.Remove(healthCheckBuilder);
+                }
+
+                // Add a simple health check that always returns healthy
+                services.AddHealthChecks()
+                    .AddCheck("test", () => Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult.Healthy("Test health check"));
             });
         });
+    }
+
+    private async Task EnsureDatabaseCreatedAsync()
+    {
+        using var scope = _factory.Services.CreateScope();
+        var dbContext = scope.ServiceProvider.GetRequiredService<ContactDbContext>();
+        await dbContext.Database.EnsureCreatedAsync();
     }
 
     [Fact]
     public async Task CreateContact_ValidData_ReturnsCreated()
     {
         // Arrange
+        await EnsureDatabaseCreatedAsync();
         var client = _factory.CreateClient();
         var contactDto = new CreateContactDto
         {
@@ -76,6 +112,7 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
     public async Task CreateContact_InvalidData_ReturnsBadRequest()
     {
         // Arrange
+        await EnsureDatabaseCreatedAsync();
         var client = _factory.CreateClient();
         var contactDto = new CreateContactDto
         {
@@ -98,6 +135,7 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
     public async Task GetContact_ExistingContact_ReturnsOk()
     {
         // Arrange
+        await EnsureDatabaseCreatedAsync();
         var client = _factory.CreateClient();
 
         // First create a contact
@@ -127,6 +165,7 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
     public async Task GetContact_NonExistingContact_ReturnsNotFound()
     {
         // Arrange
+        await EnsureDatabaseCreatedAsync();
         var client = _factory.CreateClient();
         var nonExistingId = Guid.NewGuid();
 
@@ -141,6 +180,7 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
     public async Task GetAllContacts_ReturnsOk()
     {
         // Arrange
+        await EnsureDatabaseCreatedAsync();
         var client = _factory.CreateClient();
 
         // Act
@@ -154,6 +194,7 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
     public async Task AddContactInformation_ValidData_ReturnsCreated()
     {
         // Arrange
+        await EnsureDatabaseCreatedAsync();
         var client = _factory.CreateClient();
 
         // First create a contact
@@ -192,6 +233,7 @@ public class IntegrationTests : IClassFixture<WebApplicationFactory<Program>>
     public async Task AddContactInformation_InvalidPhone_ReturnsBadRequest()
     {
         // Arrange
+        await EnsureDatabaseCreatedAsync();
         var client = _factory.CreateClient();
 
         // First create a contact
