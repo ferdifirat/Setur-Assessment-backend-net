@@ -1,6 +1,6 @@
 ﻿namespace ReportService.Domain
 {
-    public class Class1
+    public class asdasd
     {
 
     }
