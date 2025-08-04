@@ -6,33 +6,42 @@ using Shared.Kernel.Results;
 namespace ReportService.Application
 {
 
-    public class CreateReportHandler : IRequestHandler<CreateReportCommand, Result<Guid>>
+    public class UpdateReportStatusHandler : IRequestHandler<UpdateReportStatusCommand, Result>
     {
         private readonly IReportRepository _reportRepository;
 
-        public CreateReportHandler(IReportRepository reportRepository)
+        public UpdateReportStatusHandler(IReportRepository reportRepository)
         {
             _reportRepository = reportRepository;
         }
 
-        public async Task<Result<Guid>> Handle(CreateReportCommand request, CancellationToken cancellationToken)
+        public async Task<Result> Handle(UpdateReportStatusCommand request, CancellationToken cancellationToken)
         {
             try
             {
-                var report = new Report
-                {
-                    Id = request.Dto.ReportId,
-                    RequestedAt = request.Dto.RequestedAt,
-                    Status = ReportStatus.Preparing,
-                    CreatedBy = request.CreatedBy ?? "System"
-                };
+                var report = await _reportRepository.GetByIdAsync(request.ReportId);
+                if (report == null)
+                    return Result.Fail("Rapor bulunamadı");
 
-                await _reportRepository.AddAsync(report);
-                return Result<Guid>.Success(report.Id);
+                report.Status = request.Status;
+                report.UpdatedBy = request.UpdatedBy ?? "System";
+
+                if (request.Status == ReportStatus.Completed)
+                {
+                    report.CompletedAt = DateTime.UtcNow;
+                }
+
+                if (!string.IsNullOrEmpty(request.LocationStatistics))
+                {
+                    report.LocationStatistics = request.LocationStatistics;
+                }
+
+                await _reportRepository.UpdateAsync(report);
+                return Result.Success();
             }
             catch (Exception ex)
             {
-                return Result<Guid>.Fail($"Rapor oluşturulurken hata oluştu: {ex.Message}");
+                return Result.Fail($"Rapor güncellenirken hata oluştu: {ex.Message}");
             }
         }
     }

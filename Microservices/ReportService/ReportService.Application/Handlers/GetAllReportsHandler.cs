@@ -5,34 +5,35 @@ using Shared.Kernel.Results;
 
 namespace ReportService.Application
 {
-
-    public class CreateReportHandler : IRequestHandler<CreateReportCommand, Result<Guid>>
+    public class GetAllReportsHandler : IRequestHandler<GetAllReportsQuery, Result<List<ReportDto>>>
     {
         private readonly IReportRepository _reportRepository;
 
-        public CreateReportHandler(IReportRepository reportRepository)
+        public GetAllReportsHandler(IReportRepository reportRepository)
         {
             _reportRepository = reportRepository;
         }
 
-        public async Task<Result<Guid>> Handle(CreateReportCommand request, CancellationToken cancellationToken)
+        public async Task<Result<List<ReportDto>>> Handle(GetAllReportsQuery request, CancellationToken cancellationToken)
         {
             try
             {
-                var report = new Report
-                {
-                    Id = request.Dto.ReportId,
-                    RequestedAt = request.Dto.RequestedAt,
-                    Status = ReportStatus.Preparing,
-                    CreatedBy = request.CreatedBy ?? "System"
-                };
+                var reports = await _reportRepository.GetAllAsync();
 
-                await _reportRepository.AddAsync(report);
-                return Result<Guid>.Success(report.Id);
+                var reportDtos = reports.Select(report => new ReportDto
+                {
+                    Id = report.Id,
+                    RequestedAt = report.RequestedAt,
+                    Status = report.Status,
+                    CompletedAt = report.CompletedAt,
+                    LocationStatistics = report.LocationStatistics
+                }).ToList();
+
+                return Result<List<ReportDto>>.Success(reportDtos);
             }
             catch (Exception ex)
             {
-                return Result<Guid>.Fail($"Rapor oluşturulurken hata oluştu: {ex.Message}");
+                return Result<List<ReportDto>>.Fail($"Raporlar getirilirken hata oluştu: {ex.Message}");
             }
         }
     }

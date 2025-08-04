@@ -6,33 +6,37 @@ using Shared.Kernel.Results;
 namespace ReportService.Application
 {
 
-    public class CreateReportHandler : IRequestHandler<CreateReportCommand, Result<Guid>>
+    public class GetReportByIdHandler : IRequestHandler<GetReportByIdQuery, Result<ReportDto>>
     {
         private readonly IReportRepository _reportRepository;
 
-        public CreateReportHandler(IReportRepository reportRepository)
+        public GetReportByIdHandler(IReportRepository reportRepository)
         {
             _reportRepository = reportRepository;
         }
 
-        public async Task<Result<Guid>> Handle(CreateReportCommand request, CancellationToken cancellationToken)
+        public async Task<Result<ReportDto>> Handle(GetReportByIdQuery request, CancellationToken cancellationToken)
         {
             try
             {
-                var report = new Report
+                var report = await _reportRepository.GetByIdAsync(request.Id);
+                if (report == null)
+                    return Result<ReportDto>.Fail("Rapor bulunamadı");
+
+                var reportDto = new ReportDto
                 {
-                    Id = request.Dto.ReportId,
-                    RequestedAt = request.Dto.RequestedAt,
-                    Status = ReportStatus.Preparing,
-                    CreatedBy = request.CreatedBy ?? "System"
+                    Id = report.Id,
+                    RequestedAt = report.RequestedAt,
+                    Status = report.Status,
+                    CompletedAt = report.CompletedAt,
+                    LocationStatistics = report.LocationStatistics
                 };
 
-                await _reportRepository.AddAsync(report);
-                return Result<Guid>.Success(report.Id);
+                return Result<ReportDto>.Success(reportDto);
             }
             catch (Exception ex)
             {
-                return Result<Guid>.Fail($"Rapor oluşturulurken hata oluştu: {ex.Message}");
+                return Result<ReportDto>.Fail($"Rapor getirilirken hata oluştu: {ex.Message}");
             }
         }
     }
