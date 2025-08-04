@@ -1,4 +1,5 @@
-﻿using ContactService.Domain;
+﻿using ContactService.Commands;
+using ContactService.Domain;
 using MediatR;
 using Shared.Kernel.Results;
 

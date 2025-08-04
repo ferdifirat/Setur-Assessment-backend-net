@@ -1,3 +1,4 @@
+using ContactService.Commands;
 using ContactService.Domain;
 using FluentValidation;
 

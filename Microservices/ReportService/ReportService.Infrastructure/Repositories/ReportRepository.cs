@@ -1,4 +1,8 @@
-﻿namespace ReportService.Infrastructure
+﻿using ReportService.Domain;
+using ReportService.Domain.Repositories;
+using Shared.Infrastructure.Repositories;
+
+namespace ReportService.Infrastructure
 {
     public class ReportRepository : BaseRepository<Report>, IReportRepository
     {

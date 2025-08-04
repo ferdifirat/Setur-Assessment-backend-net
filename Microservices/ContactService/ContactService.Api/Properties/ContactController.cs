@@ -2,6 +2,8 @@
 using ContactService.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Shared.Infrastructure.Messaging;
+using Shared.Kernel.Events;
 
 namespace ContactService.Api.Properties
 {
@@ -10,11 +12,14 @@ namespace ContactService.Api.Properties
     [Route("api/v{version:apiVersion}/[controller]")]
     public class ContactController : ControllerBase
     {
-        private readonly IMediator _mediator;
 
-        public ContactController(IMediator mediator)
+        private readonly IMediator _mediator;
+        private readonly IEventPublisher _eventPublisher;
+
+        public ContactController(IMediator mediator, IEventPublisher eventPublisher)
         {
             _mediator = mediator;
+            _eventPublisher = eventPublisher;
         }
 
         [HttpPost]
@@ -94,12 +99,20 @@ namespace ContactService.Api.Properties
             return NoContent();
         }
 
+
         [HttpPost("reports/request")]
         public async Task<IActionResult> RequestReport()
         {
-           // event will added
+            var reportId = Guid.NewGuid();
+            var @event = new ReportRequestedEvent
+            {
+                ReportId = reportId,
+                RequestedAt = DateTime.UtcNow
+            };
 
-            return Accepted();
+            await _eventPublisher.PublishReportRequestedAsync(@event);
+
+            return Accepted(new { ReportId = reportId });
         }
     }
 }

@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\updatecontactcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\updatecontactcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.api\\properties\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|solutionrelative:contactservice\\contactservice.api\\properties\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\getcontactinformationbycontactidqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\getcontactinformationbycontactidqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.kernel\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|solutionrelative:shared\\shared.kernel\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\getcontactbyidqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\getcontactbyidqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\messaging\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\getallcontactsqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\getallcontactsqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\deletecontactinformationcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\deletecontactinformationcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\createcontactinformationdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\createcontactinformationdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\createcontactinformationcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\createcontactinformationcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\createcontactdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\createcontactdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\validators\\createcontactcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\validators\\createcontactcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\messaging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,118 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateContactCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\UpdateContactCommandValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\UpdateContactCommandValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\UpdateContactCommandValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\UpdateContactCommandValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:58.615Z",
+              "WhenOpened": "2025-08-04T20:58:59.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetContactInformationByContactIdQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\GetContactInformationByContactIdQueryValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\GetContactInformationByContactIdQueryValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\GetContactInformationByContactIdQueryValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\GetContactInformationByContactIdQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Constants.cs",
+              "RelativeDocumentMoniker": "Shared\\Shared.Kernel\\Constants.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Constants.cs",
+              "RelativeToolTip": "Shared\\Shared.Kernel\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:55.425Z",
+              "WhenOpened": "2025-08-04T20:56:42.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetContactByIdQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\GetContactByIdQueryValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\GetContactByIdQueryValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\GetContactByIdQueryValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\GetContactByIdQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Title": "RabbitMqPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
+              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
+              "RelativeToolTip": "Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA1wDsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:51.595Z",
+              "WhenOpened": "2025-08-04T20:34:58.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetAllContactsQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\GetAllContactsQueryValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\GetAllContactsQueryValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\GetAllContactsQueryValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\GetAllContactsQueryValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Title": "RabbitMqConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\RabbitMqConsumer.cs",
+              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\RabbitMqConsumer.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\RabbitMqConsumer.cs",
+              "RelativeToolTip": "Shared\\Shared.Infrastructure\\Messaging\\RabbitMqConsumer.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAYwEEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:48.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeleteContactInformationCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\DeleteContactInformationCommandValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\DeleteContactInformationCommandValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\DeleteContactInformationCommandValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\DeleteContactInformationCommandValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:42.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateContactInformationDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactInformationDtoValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\CreateContactInformationDtoValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactInformationDtoValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\CreateContactInformationDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:22.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateContactInformationCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactInformationCommandValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\CreateContactInformationCommandValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactInformationCommandValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\CreateContactInformationCommandValidator.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAB8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:14.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateContactDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactDtoValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\CreateContactDtoValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactDtoValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\CreateContactDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:25:09.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateContactCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactCommandValidator.cs",
-              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Validators\\CreateContactCommandValidator.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Validators\\CreateContactCommandValidator.cs",
-              "RelativeToolTip": "ContactService\\ContactService.Application\\Validators\\CreateContactCommandValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:24:58.227Z",
+              "WhenOpened": "2025-08-04T20:34:32.554Z",
               "EditorCaption": ""
             }
           ]

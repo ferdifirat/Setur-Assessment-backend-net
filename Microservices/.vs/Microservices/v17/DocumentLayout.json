@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.kernel\\behaviors\\performancebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|solutionrelative:shared\\shared.kernel\\behaviors\\performancebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\queries\\getcontactinformationbycontactidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\queries\\getcontactinformationbycontactidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\handlers\\getcontactbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\handlers\\getcontactbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\handlers\\deletecontacthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\handlers\\deletecontacthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\handlers\\createcontactinformationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\handlers\\createcontactinformationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.application\\handlers\\updatecontacthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D549EAB-71DB-45CF-BD6A-AD6D2E1174E8}|ContactService\\ContactService.Application\\ContactService.Application.csproj|solutionrelative:contactservice\\contactservice.application\\handlers\\updatecontacthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\reportservice\\reportservice.infrastructure\\repositories\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5231DDF4-8F18-43AB-8F43-5F87AFA32ABF}|ReportService\\ReportService.Infrastructure\\ReportService.Infrastructure.csproj|solutionrelative:reportservice\\reportservice.infrastructure\\repositories\\reportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\contactservice\\contactservice.api\\properties\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1906A1C4-3228-4FC5-8107-ED36964ADD59}|ContactService\\ContactService.Api\\ContactService.Api.csproj|solutionrelative:contactservice\\contactservice.api\\properties\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.kernel\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|solutionrelative:shared\\shared.kernel\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,38 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\messaging\\rabbitmqconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\irabbitmqpersistentconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\messaging\\irabbitmqpersistentconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\ieventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\messaging\\ieventpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\ieventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\messaging\\ieventconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\messaging\\defaultrabbitmqpersistentconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\messaging\\defaultrabbitmqpersistentconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.infrastructure\\shared.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0A811CA9-2E3C-4D35-B91E-90C12F19C14D}|Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj|solutionrelative:shared\\shared.infrastructure\\shared.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.kernel\\events\\reportrequestedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|solutionrelative:shared\\shared.kernel\\events\\reportrequestedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.kernel\\behaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|solutionrelative:shared\\shared.kernel\\behaviors\\loggingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|c:\\users\\ferdi\\documents\\github\\setur-assessment-backend-net\\microservices\\shared\\shared.kernel\\behaviors\\cachingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39060D1E-4688-4426-943A-BBF3F6BD9B65}|Shared\\Shared.Kernel\\Shared.Kernel.csproj|solutionrelative:shared\\shared.kernel\\behaviors\\cachingbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 26,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +58,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetContactInformationByContactIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Queries\\GetContactInformationByContactIdQuery.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Queries\\GetContactInformationByContactIdQuery.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Queries\\GetContactInformationByContactIdQuery.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Application\\Queries\\GetContactInformationByContactIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T21:01:21.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GetContactByIdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\GetContactByIdHandler.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Handlers\\GetContactByIdHandler.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\GetContactByIdHandler.cs*",
+              "RelativeToolTip": "ContactService\\ContactService.Application\\Handlers\\GetContactByIdHandler.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T21:01:13.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteContactHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\DeleteContactHandler.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Handlers\\DeleteContactHandler.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\DeleteContactHandler.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Application\\Handlers\\DeleteContactHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T21:01:05.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateContactInformationHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\CreateContactInformationHandler.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Handlers\\CreateContactInformationHandler.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\CreateContactInformationHandler.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Application\\Handlers\\CreateContactInformationHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T21:00:54.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReportRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
+              "RelativeDocumentMoniker": "ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
+              "RelativeToolTip": "ReportService\\ReportService.Infrastructure\\Repositories\\ReportRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T21:00:28.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateContactHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\UpdateContactHandler.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Application\\Handlers\\UpdateContactHandler.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Application\\Handlers\\UpdateContactHandler.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Application\\Handlers\\UpdateContactHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T21:00:18.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "RelativeDocumentMoniker": "ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "RelativeToolTip": "ContactService\\ContactService.Api\\Properties\\ContactController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T20:58:59.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Constants.cs",
+              "RelativeDocumentMoniker": "Shared\\Shared.Kernel\\Constants.cs",
+              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Constants.cs",
+              "RelativeToolTip": "Shared\\Shared.Kernel\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T20:56:42.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RabbitMqPublisher.cs",
               "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
               "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
               "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
               "RelativeToolTip": "Shared\\Shared.Infrastructure\\Messaging\\RabbitMqPublisher.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAA1wC4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAA1wDsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T20:34:58.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "RabbitMqConsumer.cs",
               "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\RabbitMqConsumer.cs",
               "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\RabbitMqConsumer.cs",
@@ -84,123 +184,6 @@
               "ViewState": "AgIAAE4AAAAAAAAAAAAYwEEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T20:34:32.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Shared.Infrastructure",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj",
-              "RelativeToolTip": "Shared\\Shared.Infrastructure\\Shared.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-04T20:34:05.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReportRequestedEvent.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Events\\ReportRequestedEvent.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Kernel\\Events\\ReportRequestedEvent.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Events\\ReportRequestedEvent.cs",
-              "RelativeToolTip": "Shared\\Shared.Kernel\\Events\\ReportRequestedEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:33:16.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PerformanceBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Behaviors\\PerformanceBehavior.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Kernel\\Behaviors\\PerformanceBehavior.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Behaviors\\PerformanceBehavior.cs",
-              "RelativeToolTip": "Shared\\Shared.Kernel\\Behaviors\\PerformanceBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:32:40.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoggingBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Behaviors\\LoggingBehavior.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Kernel\\Behaviors\\LoggingBehavior.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Behaviors\\LoggingBehavior.cs",
-              "RelativeToolTip": "Shared\\Shared.Kernel\\Behaviors\\LoggingBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:32:38.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CachingBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Behaviors\\CachingBehavior.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Kernel\\Behaviors\\CachingBehavior.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Kernel\\Behaviors\\CachingBehavior.cs",
-              "RelativeToolTip": "Shared\\Shared.Kernel\\Behaviors\\CachingBehavior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:32:19.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRabbitMQPersistentConnection.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\IRabbitMQPersistentConnection.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\IRabbitMQPersistentConnection.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\IRabbitMQPersistentConnection.cs",
-              "RelativeToolTip": "Shared\\Shared.Infrastructure\\Messaging\\IRabbitMQPersistentConnection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:31:42.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEventPublisher.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\IEventPublisher.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\IEventPublisher.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\IEventPublisher.cs",
-              "RelativeToolTip": "Shared\\Shared.Infrastructure\\Messaging\\IEventPublisher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:31:41.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IEventConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\IEventConsumer.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\IEventConsumer.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\IEventConsumer.cs",
-              "RelativeToolTip": "Shared\\Shared.Infrastructure\\Messaging\\IEventConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:31:40.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DefaultRabbitMQPersistentConnection.cs",
-              "DocumentMoniker": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\DefaultRabbitMQPersistentConnection.cs",
-              "RelativeDocumentMoniker": "Shared\\Shared.Infrastructure\\Messaging\\DefaultRabbitMQPersistentConnection.cs",
-              "ToolTip": "C:\\Users\\ferdi\\Documents\\GitHub\\Setur-Assessment-backend-net\\Microservices\\Shared\\Shared.Infrastructure\\Messaging\\DefaultRabbitMQPersistentConnection.cs",
-              "RelativeToolTip": "Shared\\Shared.Infrastructure\\Messaging\\DefaultRabbitMQPersistentConnection.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T20:29:52.702Z",
               "EditorCaption": ""
             }
           ]

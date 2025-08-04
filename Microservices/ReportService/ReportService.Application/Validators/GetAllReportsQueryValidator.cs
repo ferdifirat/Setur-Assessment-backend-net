@@ -1,4 +1,6 @@
 
+using FluentValidation;
+
 namespace ReportService.Application.Validators;
 
 public class GetAllReportsQueryValidator : AbstractValidator<GetAllReportsQuery>

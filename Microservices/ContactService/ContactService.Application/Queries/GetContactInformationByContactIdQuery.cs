@@ -1,4 +1,5 @@
-﻿using Shared.Kernel.Results;
+﻿using MediatR;
+using Shared.Kernel.Results;
 
 namespace ContactService.Application;
 
