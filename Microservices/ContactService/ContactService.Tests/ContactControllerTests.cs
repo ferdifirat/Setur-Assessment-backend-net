@@ -197,7 +197,7 @@ public class ContactControllerTests
         var actionResult = await _controller.RequestReport();
 
         // Assert
-        var acceptedResult = Assert.IsType<AcceptedObjectResult>(actionResult);
+        var acceptedResult = Assert.IsType<AcceptedResult>(actionResult);
         var response = Assert.IsType<Anonymous>(acceptedResult.Value);
         Assert.NotNull(response.ReportId);
         Assert.NotEqual(Guid.Empty, response.ReportId);

@@ -1,4 +1,5 @@
 ﻿using ContactService.Domain;
+using MediatR;
 using Shared.Kernel.Results;
 
 namespace ContactService.Application;

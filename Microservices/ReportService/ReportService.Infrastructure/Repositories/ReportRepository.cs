@@ -2,7 +2,7 @@
 using ReportService.Domain.Repositories;
 using Shared.Infrastructure.Repositories;
 
-namespace ReportService.Infrastructure
+namespace ReportService.Infrastructure.Repositories
 {
     public class ReportRepository : BaseRepository<Report>, IReportRepository
     {

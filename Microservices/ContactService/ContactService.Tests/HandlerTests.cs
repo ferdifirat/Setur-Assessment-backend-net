@@ -2,6 +2,7 @@ using ContactService.Application;
 using ContactService.Commands;
 using ContactService.Domain;
 using Moq;
+using Shared.Kernel.Results;
 
 namespace ContactService.Tests;
 
@@ -135,7 +136,7 @@ public class HandlerTests
     public async Task CreateContactInformationHandler_ValidInformation_ReturnsSuccess()
     {
         // Arrange
-        var handler = new CreateContactInformationHandler(_contactInfoRepositoryMock.Object);
+        var handler = new CreateContactInformationHandler(_contactInfoRepositoryMock.Object, _contactRepositoryMock.Object);
         var command = new CreateContactInformationCommand(
             new CreateContactInformationDto
             {
@@ -144,6 +145,12 @@ public class HandlerTests
                 Value = "+90 555 123 4567"
             }
         );
+
+        var contactId = command.Dto.ContactId;
+        var contact = new Contact { Id = contactId, FirstName = "Test", LastName = "User" };
+        
+        _contactRepositoryMock.Setup(x => x.GetByIdAsync(contactId))
+            .ReturnsAsync(contact);
 
         var infoId = Guid.NewGuid();
         _contactInfoRepositoryMock.Setup(x => x.AddAsync(It.IsAny<ContactInformation>()))
