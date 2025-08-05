@@ -29,6 +29,7 @@ public class CreateContactInformationDtoValidator : AbstractValidator<CreateCont
             ContactInfoType.Phone => IsValidPhoneNumber(value),
             ContactInfoType.Email => IsValidEmail(value),
             ContactInfoType.Location => IsValidLocation(value),
+            ContactInfoType.Address => IsValidLocation(value), // Address için de aynı validation
             _ => false
         };
     }
@@ -40,15 +41,19 @@ public class CreateContactInformationDtoValidator : AbstractValidator<CreateCont
             ContactInfoType.Phone => "Geçersiz telefon numarası formatı. Örnek: +90 555 123 4567",
             ContactInfoType.Email => "Geçersiz email formatı. Örnek: ornek@email.com",
             ContactInfoType.Location => "Geçersiz konum formatı.",
+            ContactInfoType.Address => "Geçersiz adres formatı.",
             _ => "Geçersiz bilgi tipi."
         };
     }
 
     private bool IsValidPhoneNumber(string phoneNumber)
     {
-        // Türkiye telefon numarası formatı: +90 555 123 4567
-        var phoneRegex = @"^\+90\s[0-9]{3}\s[0-9]{3}\s[0-9]{4}$";
-        return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber, phoneRegex);
+        if (string.IsNullOrWhiteSpace(phoneNumber))
+            return false;
+            
+        // Türkiye telefon numarası formatı: +90 5XX XXX XX XX veya 05XX XXX XX XX
+        var phoneRegex = @"^(\+90|0)?[5][0-9]{9}$";
+        return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber.Replace(" ", ""), phoneRegex);
     }
 
     private bool IsValidEmail(string email)

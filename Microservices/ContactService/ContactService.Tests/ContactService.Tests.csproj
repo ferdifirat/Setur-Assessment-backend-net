@@ -1,36 +1,53 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <PreserveCompilationContext>true</PreserveCompilationContext>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
-    <IsPackable>false</IsPackable>
-    <IsTestProject>true</IsTestProject>
-  </PropertyGroup>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
 
-  <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="6.0.0" />
-    <PackageReference Include="MediatR" Version="13.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.4" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
-    <PackageReference Include="Moq" Version="4.20.72" />
-    <PackageReference Include="xunit" Version="2.5.3" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
-	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.4" />
+		<!-- Code Coverage Settings -->
+		<CollectCoverage>true</CollectCoverage>
+		<CoverletOutputFormat>opencover</CoverletOutputFormat>
+		<CoverletOutput>$(MSBuildThisFileDirectory)TestResults\</CoverletOutput>
+		<MergeWith>$(MSBuildThisFileDirectory)TestResults\coverage.json</MergeWith>
+		<UseSourceLink>true</UseSourceLink>
+		<IncludeTestAssembly>false</IncludeTestAssembly>
+		<SingleHit>false</SingleHit>
+		<Include>[*]*</Include>
+		<Exclude>[*]*.Program</Exclude>
+		<Exclude>[*]*.Startup</Exclude>
+		<Exclude>[*.Migrations*]*</Exclude>
+		<Exclude>[FlightBookingSystem.Data*]*</Exclude>
+		<Exclude>[FlightBookingSystem.Entities.*]*</Exclude>
+		<Exclude>[*]*.Test*</Exclude>
+		<Exclude>[*]*.Tests.*</Exclude>
+		<Exclude>[*]*.Helpers.*</Exclude>
+		<Exclude>[*]*.Setup.*</Exclude>
+	</PropertyGroup>
 
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="6.0.4">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.0" />
+		<PackageReference Include="Moq" Version="4.20.72" />
+		<PackageReference Include="xunit" Version="2.4.2" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
+		<PackageReference Include="Testcontainers" Version="4.6.0" />
+		<PackageReference Include="Testcontainers.PostgreSql" Version="4.6.0" />
+		<PackageReference Include="Testcontainers.Redis" Version="3.7.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Shared\Shared.Infrastructure\Shared.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\Shared\Shared.Kernel\Shared.Kernel.csproj" />
-    <ProjectReference Include="..\ContactService.Api\ContactService.Api.csproj" />
-    <ProjectReference Include="..\ContactService.Infrastructure\ContactService.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Using Include="Xunit" />
-  </ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Shared\Shared.Infrastructure\Shared.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Shared\Shared.Kernel\Shared.Kernel.csproj" />
+	  <ProjectReference Include="..\ContactService.Api\ContactService.Api.csproj" />
+	</ItemGroup>
 
 </Project>

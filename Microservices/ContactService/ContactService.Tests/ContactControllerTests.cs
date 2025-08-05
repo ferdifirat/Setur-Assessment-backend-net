@@ -9,6 +9,7 @@ using Moq;
 using Shared.Infrastructure.Messaging;
 using Shared.Kernel.Events;
 using Shared.Kernel.Results;
+using Xunit;
 
 namespace ContactService.Tests;
 
@@ -217,7 +218,7 @@ public class ContactControllerTests
     {
         // Arrange
         _eventPublisherMock.Setup(x => x.PublishReportRequestedAsync(It.IsAny<ReportRequestedEvent>()))
-            .Returns(Task.CompletedTask);
+            .Returns(Task.FromResult(0));
 
         // Act
         var actionResult = await _controller.RequestReport();

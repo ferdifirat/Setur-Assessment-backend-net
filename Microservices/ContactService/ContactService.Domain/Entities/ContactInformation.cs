@@ -21,6 +21,7 @@ namespace ContactService.Domain
     {
         Phone,
         Email,
-        Location
+        Location,
+        Address
     }
 }

@@ -33,12 +33,16 @@ public class CreateContactInformationCommandValidator : AbstractValidator<Create
             ContactInfoType.Phone => IsValidPhoneNumber(value),
             ContactInfoType.Email => IsValidEmail(value),
             ContactInfoType.Location => IsValidLocation(value),
+            ContactInfoType.Address => IsValidLocation(value), // Address için de aynı validation
             _ => false
         };
     }
 
     private bool IsValidPhoneNumber(string phoneNumber)
     {
+        if (string.IsNullOrWhiteSpace(phoneNumber))
+            return false;
+            
         // Türkiye telefon numarası formatı: +90 5XX XXX XX XX veya 05XX XXX XX XX
         var phoneRegex = @"^(\+90|0)?[5][0-9]{9}$";
         return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber.Replace(" ", ""), phoneRegex);

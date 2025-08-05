@@ -2,6 +2,7 @@ using ContactService.Application;
 using ContactService.Application.Validators;
 using ContactService.Domain;
 using FluentValidation.TestHelper;
+using Xunit;
 
 namespace ContactService.Tests;
 
@@ -112,7 +113,7 @@ public class ValidationTests
         {
             ContactId = Guid.NewGuid(),
             Type = ContactInfoType.Phone,
-            Value = "555 123 4567" // +90 eksik
+            Value = "123 456 7890" // Geçersiz format - 5 ile başlamıyor
         };
 
         // Act
